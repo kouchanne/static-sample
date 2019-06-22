@@ -80,9 +80,11 @@ dist
 # IDE / Editor
 .idea
 .editorconfig
+.iml
 
 # Service worker
 sw.*
 
 # Mac OSX
 .DS_Store
+
