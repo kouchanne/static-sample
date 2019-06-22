@@ -1,6 +1,7 @@
 <template>
     <div>
         contページだお
+        {{p.id}}
     </div>
 </template>
 
@@ -10,6 +11,9 @@
         validate ({ params }) {
             // 数値でなければならない
             return /^\d+$/.test(params.id)
+        },
+        asyncData ({ params }) {
+            return { p: params }
         }
     }
 </script>
