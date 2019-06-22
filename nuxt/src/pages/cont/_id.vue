@@ -1,10 +1,16 @@
 <template>
-    $END$
+    <div>
+        contページだお
+    </div>
 </template>
 
 <script>
     export default {
-        name: "_id"
+        name: "cont",
+        validate ({ params }) {
+            // 数値でなければならない
+            return /^\d+$/.test(params.id)
+        }
     }
 </script>
 
