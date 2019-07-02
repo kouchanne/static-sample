@@ -1,0 +1,18 @@
+{
+  "connection": "default",
+  "collectionName": "conts",
+  "info": {
+    "name": "cont",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

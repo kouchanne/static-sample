@@ -61,5 +61,15 @@ export default {
         page.html = ampify(page.html)
       }
     }
+  },
+  generate: {
+    routes: [
+      'cont/1',
+      'cont/2',
+      'cont/3',
+      'cont/4',
+      'cont/5',
+      'cont/6',
+    ]
   }
 }
