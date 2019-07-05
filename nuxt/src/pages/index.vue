@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <logo/>
+      <logo />
       <h1 class="title">static-sample</h1>
       <h2 class="subtitle">静的サイトの検証用</h2>
       <div class="links">

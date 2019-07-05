@@ -1,11 +1,12 @@
-<template></template>
+<template>
+  <div>LPページ</div>
+</template>
 
 <script>
 export default {
-  layout: "lp",
-  components: {}
+  layout: "lp"
 };
 </script>
 
-<style>
+<style scoped>
 </style>
