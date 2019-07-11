@@ -39,6 +39,7 @@ export const actions = {
     commit("setList", res)
   },
   fetchContent({ commit }, id) {
+    console.log(id)
     const res = jsonData[id]
     commit("setContent", res)
   }

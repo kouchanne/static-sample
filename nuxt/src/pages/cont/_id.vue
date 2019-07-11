@@ -27,15 +27,12 @@ export default {
     return { p: params };
   },
   mounted() {
-    this.fetchContent();
+    this.fetchContent(1);
   },
   methods: {
-    ...mapActions(
-      {
-        fetchContent: "content/fetchContent"
-      },
-      this.$params.id
-    )
+    ...mapActions({
+      fetchContent: "content/fetchContent"
+    })
   },
   computed: {
     ...mapGetters({
