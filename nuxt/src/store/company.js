@@ -1,3 +1,15 @@
+const data = {
+  "1": {
+    "companyName": "A会社",
+    "desc": "てすと",
+  },
+  "2": {
+    "companyName": "B会社",
+    "desc": "てすとB"
+  }
+}
+
+
 export const state = () => ({
   list: {}
 })
@@ -10,16 +22,7 @@ export const mutations = {
 
 export const actions = {
   getList({ commit }) {
-    const res = {
-      "1": {
-        "companyName": "A会社",
-        "desc": "てすと"
-      },
-      "2": {
-        "companyName": "B会社",
-        "desc": "てすとB"
-      }
-    }
+    const res = data
     commit("setList", res)
   }
 }

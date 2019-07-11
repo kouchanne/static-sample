@@ -1,8 +1,17 @@
 <template>
-  <div>
-    <span>contページです</span>
-    <div>ID : {{p.id}}</div>
-    {{list}}
+  <div class="contents">
+    <article role="main">
+      <h1>タイトル</h1>
+      <ul class="tagList">
+        <li>ほぎぃ</li>
+        <li>ほぎぃ</li>
+        <li>ほぎぃ</li>
+        <li>ほぎぃ</li>
+      </ul>
+      <div class="lead">リード文が入ります</div>
+      <section>ほげほげほげほげほげ</section>
+      {{cont}}
+    </article>
   </div>
 </template>
 
@@ -18,20 +27,30 @@ export default {
     return { p: params };
   },
   mounted() {
-    this.getList();
+    this.fetchContent();
   },
   methods: {
-    ...mapActions({
-      getList: "company/getList"
-    })
+    ...mapActions(
+      {
+        fetchContent: "content/fetchContent"
+      },
+      this.$params.id
+    )
   },
   computed: {
     ...mapGetters({
-      list: "company/questionList"
+      cont: "content/getContent"
     })
   }
 };
 </script>
 
 <style scoped>
+h1 {
+  margin: 0 0 19px;
+  display: flex;
+  line-height: 1.5em;
+  font-size: 182%;
+  font-weight: bold;
+}
 </style>

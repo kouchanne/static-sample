@@ -1,8 +1,8 @@
 <template>
   <div id="layout_lp">
-    <header>ヘッダーだよ</header>
+    <header>LPのヘッダーだよ</header>
     <nuxt />
-    <footer>フッターだよ</footer>
+    <footer>LPのフッターだよ</footer>
   </div>
 </template>
 
