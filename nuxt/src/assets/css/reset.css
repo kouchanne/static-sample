@@ -1,0 +1,143 @@
+@charset "utf-8";
+/*=======================================
+「reset.css」には各タグの初期値を設定しています。
+=======================================*/
+
+/*******************************************
+Font-size Adjustment
+8px	58%
+9px	65%
+10px	72%
+11px	79%
+12px	86%
+13px	93%
+14px	100%
+15px	108%
+16px	115%
+17px	122%
+18px	129%
+19px	136%
+20px	143%
+21px	150%
+22px	158%
+23px	165%
+24px	172%
+25px	179%
+26px	186%
+27px	193%
+28px	200%
+29px	208%
+30px	215%
+31px	222%
+32px	229%
+33px	236%
+34px	243%
+35px	250%
+36px	258%
+37px	265%
+38px	272%
+39px	279%
+40px	286%
+********************************************/
+
+/*---------------------------------------
+Reset
+----------------------------------------*/
+html, body,
+h1, h2, h3, h4, h5, h6,
+div, p, dl, dt, dd, ol, ul, li,
+span, a, strong, em, b, i, del, dfn, img, ins, kbd, q, samp, small, sub, sup, var,
+table, caption, tbody, tfoot, thead, tr, th, td,
+fieldset, form, label, legend,
+object, iframe, blockquote, pre, abbr, address, cite, code,
+article, aside, canvas, details, figcaption, figure,
+footer, header, main, menu, nav, section, summary,
+time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-size:100%;
+	font-weight:normal;
+	font-style: normal;
+	vertical-align:baseline;
+	background:transparent;
+}
+
+:focus {
+	outline:0;
+}
+
+html {
+	overflow-y:scroll;
+}
+
+body {
+	font-family: "メイリオ","ヒラギノ角ゴ Pro W3", "ＭＳ Ｐゴシック",Arial, Helvetica, sans-serif;
+	font-size:14px;
+	line-height:1.5;
+	color:#333;
+	-webkit-text-size-adjust:100%;
+}
+
+header, main, menu, nav, section, article, aside, details, figcaption, figure, footer {
+	display:block;
+}
+
+input, select, textarea, pre, button {
+	vertical-align:middle;
+	font-family: "ヒラギノ角ゴ Pro W3", "メイリオ", "ＭＳ Ｐゴシック",Arial, Helvetica, sans-serif;
+	font-size:100%;
+	font-weight:normal;
+}
+
+input[type="password"] {
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+img {
+	border:0;
+}
+
+strong {
+	font-weight:bold;
+}
+
+em {
+	font-weight: normal;
+}
+
+table {
+	border-collapse:collapse;
+}
+
+th, td {
+	vertical-align:top;
+}
+
+caption, th, td {
+	text-align:left;
+}
+
+ul, ol {
+	list-style:none;
+}
+
+address {
+	font-style:normal;
+}
+
+a {
+	color:#0080B9;
+	text-decoration:none;
+}
+
+a:visited {
+	color:#6C459E;
+	text-decoration:none;
+}
+
+a:hover {
+	color:#44C0DF;
+	text-decoration:underline;
+}
