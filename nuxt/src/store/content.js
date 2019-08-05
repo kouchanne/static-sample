@@ -1,26 +1,7 @@
-const jsonData = {
-  1: {
-    "companyName": "A会社",
-    "desc": "てすと",
-    "category": "大カテ",
-    "subCategory": "中カテ",
-    "subSubCategory": "小カテ",
-    "tags": ["ほげ", "ふが"]
-  },
-  2: {
-    "companyName": "B会社",
-    "desc": "てすとB",
-    "category": "大カテ",
-    "subCategory": "中カテ",
-    "subSubCategory": "小カテ",
-    "tags": ["ほげ", "ふが", "てすと"]
-  }
-}
-
-
+import contJson from '~/assets/json/content.json'
 
 export const state = () => ({
-  list: {},
+  list: [],
   content: {}
 })
 
@@ -30,23 +11,29 @@ export const mutations = {
   },
   setContent(state, data) {
     state.content = data
-  }
+  },
 }
 
 export const actions = {
   fetchList({ commit }) {
-    const res = jsonData
+    const res = contJson
     commit("setList", res)
   },
   fetchContent({ commit }, id) {
-    console.log(id)
-    const res = jsonData[id]
-    commit("setContent", res)
+    let res = contJson.filter(x => x.id == id)
+
+    commit("setContent", res[0])
+  },
+  fetchTagList({ commit }, id) {
+    let res = contJson.filter(x => {
+      return x.tags.some(x => x === id)
+    })
+    commit("setList", res)
   }
 }
 
 export const getters = {
-  getAll(state) {
+  getList(state) {
     return state.list
   },
   getContent(state) {

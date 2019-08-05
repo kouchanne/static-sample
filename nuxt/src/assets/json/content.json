@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "タイトルA",
+    "lead": "てすと",
+    "category": "大カテ",
+    "subCategory": "中カテ",
+    "subSubCategory": "小カテ",
+    "tags": [
+      "ほげ",
+      "ふが"
+    ]
+  },
+  {
+    "id": 2,
+    "title": "タイトルB",
+    "lead": "リード分ですよー",
+    "category": "大カテ",
+    "subCategory": "中カテ",
+    "subSubCategory": "小カテ",
+    "tags": [
+      "ほげ",
+      "ふが",
+      "てすと"
+    ]
+  }
+]

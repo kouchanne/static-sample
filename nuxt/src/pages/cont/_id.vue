@@ -1,16 +1,12 @@
 <template>
   <div class="contents">
     <article role="main">
-      <h1>タイトル</h1>
+      <h1>{{cont.title}}</h1>
       <ul class="tagList">
-        <li>ほぎぃ</li>
-        <li>ほぎぃ</li>
-        <li>ほぎぃ</li>
-        <li>ほぎぃ</li>
+        <li v-for="(tag, i) in cont.tags" :key="i">{{tag}}</li>
       </ul>
-      <div class="lead">リード文が入ります</div>
+      <div class="lead">{{cont.lead}}</div>
       <section>ほげほげほげほげほげ</section>
-      {{cont}}
     </article>
   </div>
 </template>
@@ -27,7 +23,7 @@ export default {
     return { p: params };
   },
   mounted() {
-    this.fetchContent(1);
+    this.fetchContent(this.$nuxt.$route.params.id);
   },
   methods: {
     ...mapActions({

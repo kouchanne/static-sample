@@ -12,7 +12,7 @@ header {
   color: white;
 }
 footer {
-  background-color: red;
+  background-color: blue;
   color: white;
 }
 </style>
